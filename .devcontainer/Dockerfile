@@ -14,3 +14,11 @@ ENV PATH="/home/vscodespace/flutter/bin:$PATH"
 
 RUN git clone https://github.com/flutter/flutter && \
     /home/vscodespace/flutter/bin/flutter config --enable-web
+
+RUN mkdir android
+RUN wget https://dl.google.com/android/repository/commandlinetools-linux-9123335_latest.zip
+RUN unzip commandlinetools-linux-9123335_latest.zip
+RUN mv cmdline-tools android
+RUN cd android/cmdline-tools
+RUN mkdir tools
+RUN mv -i * tools
