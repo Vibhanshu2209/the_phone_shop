@@ -16,6 +16,7 @@ RUN git clone https://github.com/flutter/flutter && \
     /home/vscodespace/flutter/bin/flutter config --enable-web
 
 RUN mkdir android
+RUN cd android
 RUN wget https://dl.google.com/android/repository/commandlinetools-linux-9123335_latest.zip
 RUN unzip commandlinetools-linux-9123335_latest.zip
 RUN mv cmdline-tools android
