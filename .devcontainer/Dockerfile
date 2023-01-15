@@ -21,6 +21,6 @@ RUN cd /home/vscodespace/android
 RUN wget https://dl.google.com/android/repository/commandlinetools-linux-9123335_latest.zip
 RUN unzip commandlinetools-linux-9123335_latest.zip
 # RUN mv cmdline-tools android
-RUN cd /home/vscodespace/android/cmdline-tools
+# RUN cd /home/vscodespace/android/cmdline-tools
 # RUN mkdir tools
 # RUN mv -i * tools
