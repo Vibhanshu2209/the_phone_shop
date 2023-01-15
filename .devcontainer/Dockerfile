@@ -17,8 +17,8 @@ RUN git clone https://github.com/flutter/flutter && \
 
 RUN mkdir android
 RUN echo pwd
-# RUN cd android
-# RUN wget https://dl.google.com/android/repository/commandlinetools-linux-9123335_latest.zip
+RUN cd /home/vscodespace/android
+RUN wget https://dl.google.com/android/repository/commandlinetools-linux-9123335_latest.zip
 # RUN unzip commandlinetools-linux-9123335_latest.zip
 # RUN mv cmdline-tools android
 # RUN cd android/cmdline-tools
